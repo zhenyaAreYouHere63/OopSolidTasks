@@ -1,4 +1,5 @@
-package org.tasks.solid.task3;
+package com.tasks.solid.task3;
+
 
 /**
  * Are there any violations in this code (see Rectangle class too)?

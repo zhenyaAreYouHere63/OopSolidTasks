@@ -1,4 +1,4 @@
-package org.tasks.solid.task2;
+package com.tasks.solid.task2;
 
 import java.util.ArrayList;
 import java.util.List;

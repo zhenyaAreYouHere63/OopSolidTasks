@@ -1,19 +1,22 @@
-package org.tasks.parallelepiped.extend;
+package com.tasks.parallepiped.extend;
 
-import org.tasks.parallelepiped.method.Formula;
+import com.tasks.parallepiped.method.ColoredShape;
+import lombok.Getter;
 
-public class Pyramid extends Formula {
+@Getter
+public class Pyramid extends ColoredShape {
 
-    private final String color = "green";
+    private final double height;
 
-    @Override
-    public double calculateVolume() {
-        double height = 8.5;
-        double area = 11.0;
-        return height * area * ((double) 1 / 3);
+    private final String color;
+    public Pyramid(String color, double height) {
+        this.color = color;
+        this.height = height;
     }
 
-    public String getColor() {
-        return color;
+    @Override
+    public void calculateVolume(double a, double b) {
+        double volume = ((double) 1 / 3) * a * b * height;
+        System.out.println(volume);
     }
 }

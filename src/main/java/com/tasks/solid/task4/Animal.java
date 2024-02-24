@@ -1,4 +1,4 @@
-package org.tasks.solid.task4;
+package com.tasks.solid.task4;
 
 /**
  * Look through interface implementations. Can we consider such solution a best practice?

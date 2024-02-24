@@ -1,19 +1,21 @@
-package org.tasks.parallelepiped.extend;
+package com.tasks.parallepiped.extend;
 
-import org.tasks.parallelepiped.method.Formula;
+import com.tasks.parallepiped.method.ColoredShape;
+import lombok.Getter;
 
-public class Sphere extends Formula {
+@Getter
+public class Sphere extends ColoredShape {
 
-    private final String color = "yellow";
+    private final double radius;
 
-    @Override
-    public double calculateVolume() {
-        double pi = 3.14;
-        double radius = 11.0;
-        return pi * Math.pow(radius, 3) * (4/3);
+    private final String color;
+
+    public Sphere(String color, double radius) {
+        this.color = color;
+        this.radius = radius;
     }
 
-    public String getColor() {
-        return color;
+    public void calculateVolume() {
+        double volume = ((double) 4 / 3) * PI * Math.pow(radius, 3);
     }
 }

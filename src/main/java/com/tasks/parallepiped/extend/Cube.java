@@ -1,17 +1,19 @@
-package org.tasks.parallelepiped.extend;
+package com.tasks.parallepiped.extend;
 
-import org.tasks.parallelepiped.method.Formula;
+import com.tasks.parallepiped.method.ColoredShape;
+import lombok.Getter;
 
-public class Cube extends Formula {
+@Getter
+public class Cube extends ColoredShape {
 
-    private final String color = "pink";
-    @Override
-    public double calculateVolume() {
-        double sideOfSquare = 21.0;
-        return Math.pow(sideOfSquare, 3);
+    private final String color;
+
+    public Cube(String color) {
+        this.color = color;
     }
 
-    public String getColor() {
-        return color;
+    public void calculateVolume(double a) {
+        double volume = Math.pow(a, 3);
+        System.out.println(volume);
     }
 }

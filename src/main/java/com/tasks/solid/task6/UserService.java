@@ -1,4 +1,4 @@
-package org.tasks.solid.task6;
+package com.tasks.solid.task6;
 
 /**
  * Let's imagine that we have a service that contains the following logic.

@@ -1,16 +1,24 @@
-package org.tasks.parallelepiped.extend;
-import org.tasks.parallelepiped.method.Formula;
+package com.tasks.parallepiped.extend;
 
-public class Parallelepiped extends Formula {
-    private final String color = "red";
-    @Override
-    public double calculateVolume() {
-        double area = 21.0;
-        double height = 11.0;
-        return area * height;
+import com.tasks.parallepiped.method.ColoredShape;
+import lombok.Getter;
+
+@Getter
+public class Parallelepiped extends ColoredShape {
+
+    private final double height;
+
+    private final String color;
+
+
+    public Parallelepiped(double height, String color) {
+        this.height = height;
+        this.color = color;
     }
 
-    public String getColor() {
-        return color;
+    @Override
+    public void calculateVolume(double a, double b) {
+        double volume = a * b * height;
+        System.out.println(volume);
     }
 }

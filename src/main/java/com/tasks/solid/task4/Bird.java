@@ -1,7 +1,6 @@
-package ua.polina.mentorship.oop.solid.task4;
+package com.tasks.solid.task4;
 
 import lombok.extern.slf4j.Slf4j;
-import org.tasks.solid.task4.Animal;
 
 @Slf4j
 public class Bird implements Animal {

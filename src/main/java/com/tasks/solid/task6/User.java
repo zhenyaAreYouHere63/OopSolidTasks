@@ -1,4 +1,4 @@
-package org.tasks.solid.task6;
+package com.tasks.solid.task6;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

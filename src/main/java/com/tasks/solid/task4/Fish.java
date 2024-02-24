@@ -1,9 +1,9 @@
-package org.tasks.solid.task4;
+package com.tasks.solid.task4;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Fish implements Animal{
+public class Fish implements Animal {
 
     @Override
     public void eat() {

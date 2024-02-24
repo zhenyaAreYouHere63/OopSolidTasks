@@ -1,4 +1,4 @@
-package org.tasks.solid.task5;
+package com.tasks.solid.task5;
 
 import lombok.Data;
 
